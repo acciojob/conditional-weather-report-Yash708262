@@ -4,7 +4,7 @@ const WeatherDisplay = ({data}) => {
 
   return (
     <div>
-        <span><p style={{backgroundColor: data.temperature > 20 ? 'red' : 'blue'}}>Temperature: {data.temperature}</p></span>
+       <p>Temperature: <span style={{backgroundColor: data.temperature > 20 ? 'red' : 'blue'}}>{data.temperature}</span></p>
         <p>Conditions: {data.conditions}</p>
     </div>
   )
